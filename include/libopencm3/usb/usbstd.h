@@ -205,8 +205,6 @@ struct usb_endpoint_descriptor {
 	uint8_t bmAttributes;
 	uint16_t wMaxPacketSize;
 	uint8_t bInterval;
-	uint8_t bRefresh;
-	uint8_t bSynchAddress;
 	/* Descriptor ends here. The following are used internally: */
 	const void *extra;
 	int extralen;
