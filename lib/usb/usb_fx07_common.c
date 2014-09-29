@@ -273,9 +273,9 @@ void stm32fx07_poll(usbd_device *usbd_dev)
 		 * This appears to fix a problem where the first 4 bytes
 		 * of the DATA OUT stage of a control transaction are lost.
 		 */
-		for (i = 0; i < 1000; i++) {
-			__asm__("nop");
-		}
+//		for (i = 0; i < 1000; i++) {
+//			__asm__("nop");
+//		}
 
 		if (usbd_dev->user_callback_ctr[ep][type]) {
 			usbd_dev->user_callback_ctr[ep][type] (usbd_dev, ep);
